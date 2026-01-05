@@ -1,40 +1,12 @@
-"""
-📿 سكربت الصلاة على النبي محمد ﷺ
-🎨 واجهة ملونة مع مميزات متنوعة
-"""
+print("Hello from Python 👋")
 
-import time
-import os
-import random
-from datetime import datetime
+name = input("اكتب اسمك: ")
+print("تشرفت بمعرفتك يا", name)
 
-class Colors:
-    """ألوان ANSI للطباعة"""
-    RED = '\033[91m'
-    GREEN = '\033[92m'
-    YELLOW = '\033[93m'
-    BLUE = '\033[94m'
-    PURPLE = '\033[95m'
-    CYAN = '\033[96m'
-    WHITE = '\033[97m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-    END = '\033[0m'
+for i in range(1, 6):
+    print("الرقم:", i)
 
-def clear_screen():
-    """مسح الشاشة"""
-    os.system('cls' if os.name == 'nt' else 'clear')
-
-def print_banner():
-    """عرض بانر جميل"""
-    banner = f"""
-{Colors.PURPLE}{'='*60}{Colors.END}
-{Colors.YELLOW}{Colors.BOLD}            📿 سكربت الصلاة على النبي محمد ﷺ 📿{Colors.END}
-{Colors.CYAN}              قال تعالى: {Colors.END}
-{Colors.GREEN}    ﴿إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ{Colors.END}
-{Colors.GREEN}     يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ{Colors.END}
-{Colors.GREEN}         وَسَلِّمُوا تَسْلِيمًا﴾ [الأحزاب: 56]{Colors.END}
-{Colors.PURPLE}{'='*60}{Colors.END}
+print("انتهى السكربت ✅"){Colors.PURPLE}{'='*60}{Colors.END}
     """
     print(banner)
 
